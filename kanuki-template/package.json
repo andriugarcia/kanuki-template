@@ -9,10 +9,6 @@
     "dist/*",
     "src/**/*.vue"
   ],
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "npx vue-cli-service build --target lib --formats umd-min --no-clean --dest src/kanuki-article --name 'kanuki-article' src/webtemplate.vue"
-  },
   "dependencies": {
     "vue": "^2.6.10"
   },
