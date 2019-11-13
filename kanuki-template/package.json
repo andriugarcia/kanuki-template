@@ -1,0 +1,35 @@
+{
+  "name": "web-template",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/web-template.ssr.js",
+  "module": "dist/web-template.esm.js",
+  "unpkg": "dist/web-template.min.js",
+  "files": [
+    "dist/*",
+    "src/**/*.vue"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "npx vue-cli-service build --target lib --formats umd-min --no-clean --dest src/kanuki-article --name 'kanuki-article' src/webtemplate.vue"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "minimist": "^1.2.0",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10",
+    "@vue/cli-service": "^3.11.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
